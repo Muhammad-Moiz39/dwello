@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+     font-family: "Montserrat", sans-serif;
+     color: #4f3527;
+}
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+ul,li{
+     list-style: none;
+    display: flex;
+    gap: 55px;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+/* header */
+.header {
+    padding: 21px 0;
+}
+.header .container {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+   max-width: 95px;
+   width: 100%;
+}
+.logo img {
+   width: 100%;
+}
+.navbar  {
+  display: flex;
+    font-family: "Montserrat", sans-serif;
+    justify-content: center;
+    margin-left: 145px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2b1b12;
+    transition: all 0.3s ease-in-out;
+   list-style: none;
+   margin-left: 30px;
+
+}
+.nav-link:hover {
+    color: brown;
+}
+.button {
+    font-size: 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    padding: 8px 12px;
+    transition: all 0.3s ease-in-out;
+}
+.button:hover {
+    background: #000;
+}
+.browser{
+   margin-right: 20px;
+    
+}
+.icon{
+    color: black;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+}
+.hero {
+    padding: 100px 0px;
+    color: #FEF7F2;
+    position: relative;
+}
+.hero-content{
+    display: flex;
+}
+.hero-image{
+    width: 60%;
+}
+.hero-image img{
+    width: 100%;
+    margin-top: -138px;
+}
+.main-heading{
+    font-size: 74px;
+    font-weight: 800;
+    color: #2b1b12;
+    max-width: 550px;
+}
+.hero-para{
+    font-weight: bold;
+    color: #4f3527;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-block: 32px 72px;
+    max-width: 413px;
+}
+.hero .button{
+    padding-inline: 30px;
+    padding-block: 10px;
+}
+.field{
+    display: flex;
+    background-color: #ddc7bb;
+    border-radius: 18px;
+    padding: 50px 30px;
+    max-width: 85%;
+    margin-left: 50px ;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    bottom: 0;
+    
+}
+.field-content{
+    position: relative;
+}
+.field-content input{
+    padding: 20px 15px 20px 15px;
+    background-color: #fbf5f1;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: #695346;
+    font-weight: bold;
+    
+}
+.field .button{
+    padding-block: 20px;
+}
+.field-content i{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    margin: auto;
+    margin-left: 20px;
+}
+
+
+
+ 

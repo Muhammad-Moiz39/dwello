@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dwello</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
     <!-- fontawesome -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,6 +19,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs
     /font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
 </head>
 <body>
      <header class="header">
@@ -223,6 +230,7 @@
             <div class="residense-cards">
                 <div class="card-1">
                     <img src="assets/residence-1.webp" alt="pic">
+                    <div class="card-body">
                     <div class="residense-content">
                         <h3>
                          <i class="fa-solid fa-location-dot"></i>
@@ -247,10 +255,12 @@
                                     $3,700,000
                                 </span>
                             </div>      
+                            </div>
                         </div>
 
                         <div class="card-1">
                     <img src="assets/residence-2.webp" alt="pic">
+                    <div class="card-body">
                     <div class="residense-content">
                         <h3>
                          <i class="fa-solid fa-location-dot"></i>
@@ -273,7 +283,8 @@
                                 <span>
                                     $850,000
                                 </span>
-                            </div>      
+                            </div>     
+                            </div>
                         </div>
 
 
@@ -283,6 +294,7 @@
 
                         <div class="card-1">
                     <img src="assets/residence-3.webp" alt="pic">
+                    <div class="card-body">
                     <div class="residense-content">
                         <h3>
                          <i class="fa-solid fa-location-dot"></i>
@@ -306,6 +318,7 @@
                                     $3,700,000
                                 </span>
                             </div>      
+                            </div>
                         </div>
                 </div>
             </div>
@@ -319,11 +332,201 @@
 
                 <div class="about-cards">
                     <div class="review-card">
-                        <img src="assets/review-1.webp" alt="">
                         
+                        <img src="assets/review-1.webp" alt="">
+                       
+
+                        <div class="profile">
+
+                            <div class="profile-info">
+<img src="assets/person-1.webp" alt="">
+                                <div class="profile-content">
+                                
+                                    <h3 class="name">samin Nguyen</h3>
+                                    <p>San Francisco</p>
+                                </div>
+
+                                <span class="rating">
+                                      <i class="fa-solid fa-star"></i>5.0
+                                </span>
+
+                            </div>
+
+                            <p class="review">
+                                Dwello truly cares about their clients.
+                                They listened to my needs and preferences
+                                and helped me find the perfect home in the
+                                Bay Area. Their professionalism and attention
+                                to detail are unmatched.
+                            </p>
+                            
+                        </div>
+
+                        
+                       
                     </div>
+                     <div class="review-card">
+                        
+                        <img src="assets/review-2.webp" alt="">
+                       
+
+                        <div class="profile">
+
+                            <div class="profile-info">
+<img src="assets/person-2.webp" alt="">
+                                <div class="profile-content">
+                                
+                                    <h3 class="name">Dann Scott</h3>
+                                    <p>San Francisco</p>
+                                </div>
+
+                                <span class="rating">
+                                      <i class="fa-solid fa-star"></i>5.0
+                                </span>
+
+                            </div>
+
+                            <p class="review">
+                               I had a fantastic experience working with Dwello. 
+                               Their expertise and personalized 
+                               service exceeded my expectations. I found my dream 
+                               home quickly and smoothly. Highly recommended!
+                            </p>
+                            
+                        </div>
+
+
+                        
+                </div>
+                 <div class="review-card">
+                        
+                        <img src="assets/review-3.webp" alt="">
+                       
+
+                        <div class="profile">
+
+                            <div class="profile-info">
+<img src="assets/person-3.webp" alt="">
+                                <div class="profile-content">
+                                
+                                    <h3 class="name">Sara Johnson</h3>
+                                    <p>San Francisco</p>
+                                </div>
+
+                                <span class="rating">
+                                      <i class="fa-solid fa-star"></i>5.0
+                                </span>
+
+                            </div>
+
+                            <p class="review">
+                               Dwello made my dream of owning a home a reality! 
+                               Their team provided exceptional
+                                support and guided me through every step of
+                                 the process. I couldn't be happier with my new home!
+                            </p>
+                            
+                        </div>
+
+        </div>
+        
+            </div>
+            
+<div class="slider-arrows">
+
+            <button class="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <button class="next">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+        </section>
+        <section class="query">
+            <div class="container">
+                <div class="question">
+                    Do You Have Any Question?
+                    Get Help From Us
+                </div>
+                <div class="chat">
+                    <div class="browse">
+                        <span>
+                            <i class="fa-regular fa-circle-check"></i>
+                            Chat live with our support team
+                        </span>
+                        </div>
+                       <div class="browse">
+                         <i class="fa-regular fa-circle-check"></i>
+                         Browse our FAQ
+                       </div>
+
+                    </div>
+                    <form class="email-form">
+
+            <div class="email-field">
+
+                <i class="fa-solid fa-envelope"></i>
+
+                <input type="email" placeholder="Enter your email address..." required>
+
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
                 </div>
             </div>
         </section>
+        <footer class="footer">
+    <div class="footer-container">
+
+        
+        <div class="footer-about">
+             <a class="logo" href="/">
+                <img src="assets/logo.svg" alt="Dwello">
+            </a>
+
+            <p class="footer-para">
+                Bringing you closer to
+                your dream home, one
+                click at a time.
+            </p>
+        </div>
+
+       
+        <div class="footer-column">
+            <h3 class="fields">About</h3>
+            <a href="#">Our Story</a>
+            <a href="#">Careers</a>
+            <a href="#">Our Team</a>
+            <a href="#">Resources</a>
+        </div>
+
+        
+        <div class="footer-column">
+            <h3 class="fields">Support</h3>
+            <a href="#">FAQ</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Help Center</a>
+            <a href="#">Terms of Service</a>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="fields">Find Us</h3>
+            <a href="#">Events</a>
+            <a href="#">Locations</a>
+            <a href="#">Newsletter</a>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="fields">Our Social</h3>
+            <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter (X)</a>
+        </div>
+
+    </div>
+</footer>
 </body>
 </html>

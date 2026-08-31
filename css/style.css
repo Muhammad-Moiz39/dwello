@@ -136,11 +136,12 @@ a{
     position: relative;
     
 }
+
 .field-content{
     position: relative;
 }
 .field-content input{
-    padding: 20px 15px 20px 15px;
+    padding: 20px 15px 15px 58px;
     background-color: #fbf5f1;
     outline: none;
     border: none;
@@ -149,8 +150,13 @@ a{
     font-weight: bold;
     
 }
+.field{
+    flex: 1;
+    position: relative;
+}
 .field .button{
-    padding-block: 20px;
+    padding-block: 15px;
+    padding-inline: 40px;
 }
 .field-content i{
     position: absolute;
@@ -172,7 +178,7 @@ a{
 }
 .available{
     display: flex;
-    gap: 62px;
+    gap: 74px;
 }
 .frame-heading{
      font-family: "Montserrat", sans-serif;
@@ -183,7 +189,7 @@ a{
      max-width: 514px;
 }
 .frame-description{
-    max-width: 514px;
+    max-width: 527px;
     color: #4f3527;
     font-size: 18px;
     line-height: 1.6;
@@ -353,19 +359,23 @@ a{
 .stars i{
     color:#ffc71e;
 }
+.about .container{
+    width: 100%;
+    max-width: 1200px;
+}
 .about-cards{
-     
-   width: 33%;
+     width: 100%;
+   max-width: 33%;
    display: flex;
-   gap: 30px;
+   
    align-items: center;
-     margin-left: -33px;
+     margin-left: -25px;
     }
 .about-cards .review-card{
     margin: 0 20px;
 }
 .review-card img{
-        max-width:382px;
+        max-width:375px;
     border-top-left-radius: 20px;
     border-top-right-radius:20px;
 }
@@ -397,14 +407,15 @@ a{
     margin-left:20px;
 }
 .review-card{
-    max-width:382px;
+    max-width: 375px;
+  
 }
 .profile-content{
     margin-left:-75px;
 }
 .profile-info img{
     margin-left:24px;
-margin-right:30px;
+margin-right:40px;
 }
 .rating{
     margin-right:40px;
@@ -442,9 +453,10 @@ margin-right:30px;
 .prev, .next{
     background-color:#2b1b12;
     border-radius:100px;
-    height:58px;
-  width:58px;
+   max-height:58px;
+  max-width:58px;
   align-items:center;
+  border: none;
 }
 .prev i, .next i{
     color:#ffff;
@@ -476,7 +488,7 @@ margin-right:30px;
     font-weight: bold;
     color: #543e32;
 }
-email-form {
+.email-form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -596,4 +608,147 @@ email-form {
 .footer-column i{
     font-size:  24px;
     max-width: 32px;
+}
+
+/* responsive max width 992 */
+@media (max-width: 992px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .navbar {
+        margin-left: 40px;
+        gap: 20px;
+    }
+
+    ul, li {
+        gap: 25px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .nav-right {
+        gap: 15px;
+        margin-right: 0;
+    }
+    .main-heading{
+        font-size: 50px;
+        
+    }
+    .header .container{
+        padding-inline: 10px;
+    }
+    .hero-headings{
+        padding-left: 20px;
+    }
+    .search-form{
+        padding-left: 20px;
+    }
+    .field {
+        width: 90%;
+        max-width: 900px;
+        margin: -100px auto 0;
+        padding: 35px 25px;
+        gap: 15px;
+    }
+
+    .field-content {
+        flex: 1;
+        min-width: 0;
+    }
+    .field-content input {
+        width: 100%;
+    }
+    .field {
+        width: 100%;
+        max-width: 900px;
+        margin: auto 0;
+        padding: 35px 25px;
+        gap: 15px;
+    }
+
+    .field-content {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .field-content input {
+        width: 100%;
+
+    }
+.frame-img img{
+    width: 100%;
+    padding-left: 20px;
+}
+.frame-content{
+    padding-right: 10px;
+}
+.numbers{
+    font-size: 38px;
+}
+.frame-heading{
+    font-size: 30px;
+}
+.frame-description{
+    font-size: 16px;
+}
+.available{
+    gap: 30px;
+}
+   .features {
+        padding-top: 100px;
+    }
+
+    .choose {
+        font-size: 34px;
+        padding-bottom: 45px;
+    }
+
+    .facility-para {
+        font-size: 16px;
+        max-width: 600px;
+    }
+
+    .feature-cards {
+        gap: 25px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        margin-left: 100px;
+    }
+    .facility-card{
+        width: 100%;
+       
+    }
+    .about-cards{
+            display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 20px;
+
+    }
+    .review{
+        font-size: 14px;
+    }
+    .name{
+        font-size: 18px;
+    }
+.question{
+    font-size: 30px;
+}
+  .browse{
+    font-size: 16px;
+  }
+.footer-container{
+        display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 20px;
+}
+.footer-column a{
+    font-size: 16px;
+}
 }

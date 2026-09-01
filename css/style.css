@@ -80,6 +80,9 @@ a{
  .icon{
     color: black;
  }
+ .nav-menu{
+    display: none;
+ }
  .nav-right{
     display: flex;
     align-items: center;
@@ -751,4 +754,544 @@ margin-right:40px;
 .footer-column a{
     font-size: 16px;
 }
+}
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+    .nav-menu {
+        padding: 5px;
+        font-size: 24px;
+        color: black;
+        height: 35px;
+        width: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 10;
+     }
+     .navbar {
+        position: absolute;
+        right: -400px;;
+        top: 0;
+        bottom: 0;
+        max-width: 0px;
+        width: 100%;
+        height: 100vh;
+        padding: 120px 0 40px;
+        background: white;
+        color: #000;
+        justify-content: start;
+        z-index: 5;
+        opacity: 0;
+        transition: all .6s ease-in-out;
+        overflow: hidden;
+     }
+     .navbar ul {
+        flex-direction: column;
+        gap: 20px;
+     }
+     .nav-link {
+        padding: 5px 20px;
+     }
+     .search-form{
+        padding-right: 10px;
+     }
+     .field-content input{
+        padding-left: 10px;
+     }
+     .navbar.active {
+        right: 0px;
+        opacity: 1;
+        max-width: 400px;
+     }
+     .feature-cards{
+        padding-right: 55px;
+     }
+     .main-heading{
+        font-size: 38px;
+     }
+     .hero-para{
+        font-size: 16px;
+     }
+     .residense-cards{
+        margin-bottom: 30px;
+     }
+     .field{
+        margin-top: 100px;
+     }
+     .main-block{
+        flex-direction: column;
+        align-items: center;
+     }
+     .about-cards{
+            display: flex;
+    flex-direction: column;
+    align-items: self-start;
+     }
+     .frame-img img{
+        max-width: 80%;
+     }
+     .email-field{
+        max-width: 350px;
+     }
+     .email-form button{
+        max-width: 100px;
+        padding-inline: 10px;
+        font-size: 16px;
+     }
+     .question{
+        font-size: 26px;
+     }
+     .email-field input{
+        font-size: 15px;
+     }
+     .footer-container{
+        column-gap: 0px;
+     }   
+    }
+
+/* max-width 480 */
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        max-width: 100%;
+    }
+    .header {
+        padding: 15px 0;
+    }
+
+    .header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .logo {
+        max-width: 80px;
+    }
+    .menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #2b1b12;
+        
+    }
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #fef7f2;
+        padding: 25px 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .navbar.active {
+        display: flex;
+    }
+    .nav-link {
+        font-size: 16px;
+        margin-left: 0;
+    }
+    ul,
+    li {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+
+    .nav-right {
+        display: none;
+    }
+    .hero {
+        padding: 50px 0 0;
+    }
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .main-heading {
+        font-size: 38px;
+        line-height: 1.1;
+        max-width: 100%;
+        margin-top: 0;
+    }
+     .review-card{
+        padding-right: 30px;
+     }
+    .hero-para {
+        font-size: 15px;
+        line-height: 1.5;
+        max-width: 100%;
+        margin: 20px auto 30px;
+    }
+
+    .hero .button {
+        padding: 12px 25px;
+    }
+.residense-cards h3{
+    font-size: 16px;
+}
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .field {
+        width: 90%;
+        max-width: 100%;
+        margin: -30px auto 0;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        border-radius: 14px;
+    }
+
+    .field-content {
+        width: 100%;
+        flex: none;
+        position: relative;
+    }
+
+    .field-content input {
+        width: 100%;
+        height: 52px;
+        padding: 15px 15px 15px 45px;
+    }
+
+    .field-content i {
+        left: 0;
+    }
+
+    .field .button {
+        width: 100%;
+        height: 52px;
+        padding: 12px;
+    }
+
+
+  
+    .availability {
+        margin-top: 65px;
+    }
+
+    .main-block {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .frame-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .frame-heading {
+        font-size: 28px;
+        line-height: 1.3;
+        max-width: 100%;
+    }
+
+    .frame-description {
+        font-size: 15px;
+        line-height: 1.5;
+        max-width: 100%;
+        margin: 20px auto 35px;
+    }
+
+    .available {
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .numbers {
+        font-size: 32px;
+    }
+
+    .houses {
+        font-size: 12px;
+        max-width: 130px;
+    }
+
+    .frame-img {
+        width: 100%;
+    }
+
+    .frame-img img {
+        width: 100%;
+    }
+    .features {
+        padding-top: 65px;
+    }
+
+    .facilities {
+        width: 100%;
+    }
+
+    .choose {
+        font-size: 28px;
+        line-height: 1.3;
+        max-width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .facility-para {
+        font-size: 15px;
+        line-height: 1.5;
+        max-width: 100%;
+    }
+
+    .feature-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .facility-card {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 0;
+        padding: 25px 20px;
+    }
+
+    .feature-icon {
+        padding: 14px;
+    }
+
+    .guidance {
+        font-size: 17px;
+        margin-block: 18px 10px;
+    }
+
+    .para {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .residense {
+        padding-top: 65px;
+    }
+
+    .property-info {
+        width: 100%;
+    }
+
+    .dimension {
+        margin-left: 0;
+    }
+
+    .residense-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .card-1 img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .residense-content {
+        font-size: 16px;
+        margin-block: 20px;
+    }
+
+    .card-body {
+        margin-left: 15px;
+    }
+
+    .price {
+        gap: 40px;
+        margin-right: 15px;
+        font-size: 19px;
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+
+    .about {
+        margin-top: 65px;
+        padding-bottom: 30px;
+    }
+
+    .about .container {
+        width: 90%;
+    }
+
+    .about-cards {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .about-cards .review-card {
+        margin: 0;
+    }
+
+    .review-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .profile-info {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    .profile{
+        width: 375px;
+    }
+    .profile-content {
+        margin-left: 0;
+    }
+
+    .rating {
+        margin-right: 15px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .review {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px 30px;
+        font-size: 14px;
+    }
+
+    .slider-arrows {
+        margin-top: 35px;
+    }
+
+    .prev {
+        margin-right: 15px;
+    }
+
+    .prev i,
+    .next i {
+
+        font-size: 20px;
+    }
+
+    .prev,
+    .next {
+        width: 50px;
+        height: 50px;
+    }
+
+    .query {
+        margin-top: 65px;
+    }
+
+    .question {
+        width: 100%;
+        max-width: 100%;
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .chat {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-block: 25px 40px;
+    }
+
+    .browse {
+        font-size: 15px;
+    }
+
+    .email-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 65px;
+    }
+
+    .email-field {
+        width: 100%;
+        height: 55px;
+        padding: 0 15px;
+    }
+
+    .email-field input {
+        font-size: 15px;
+    }
+
+    .email-form button {
+        width: 100%;
+        height: 55px;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .footer {
+        padding: 45px 0 60px;
+    }
+
+    .footer-container {
+        width: 90%;
+        max-width: 100%;
+        margin: 0 auto;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        column-gap: 0;
+        row-gap: 35px;
+    }
+
+    .footer-about {
+        margin-right: 0;
+        gap: 20px;
+    }
+
+    .footer .logo img {
+        max-width: 80px;
+    }
+
+    .footer-para {
+        width: 100%;
+        max-width: 280px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .footer-column {
+        gap: 18px;
+    }
+
+    .footer-column h3 {
+        font-size: 20px;
+    }
+
+    .footer-column a {
+        font-size: 15px;
+    }
+
+    .footer-column i {
+        font-size: 20px;
+    }
 }

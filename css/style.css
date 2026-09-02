@@ -338,11 +338,15 @@ a{
     color: #4f3527;
     margin-bottom: 29px;
     margin-right:20px;}
-.residense-cards{
-    display: flex;
-    gap: 65px;
+
+    .residense-cards{
     justify-content: center;
-    flex-wrap: wrap;
+    }
+.residense-cards .slick-slide{
+    padding: 0px 15px;
+}
+.residense-cards .card-1{
+    margin-top: 91px;
 }
 .about{
     margin-top: 144px;
@@ -853,9 +857,10 @@ padding-left: 20px;
         max-width: 100%;
     }
     .header {
-        padding: 15px 0;
+        position: relative;
+        z-index: 100;
     }
-
+    
     .header .container {
         display: flex;
         align-items: center;
@@ -865,13 +870,14 @@ padding-left: 20px;
     .logo {
         max-width: 80px;
     }
-    .menu-btn {
-        display: block;
-        background: none;
-        border: none;
+    .nav-menu {
+        display: flex;
+        position: relative;
+        z-index: 101;
+        cursor: pointer;
         font-size: 24px;
         color: #2b1b12;
-        
+       
     }
     .navbar {
         display: none;
@@ -879,19 +885,27 @@ padding-left: 20px;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #fef7f2;
+        
+        height: auto;
         padding: 25px 0;
         margin: 0;
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        overflow: visible;
+        opacity: 1;
+        z-index: 100;
     }
     .navbar.active {
         display: flex;
+       background: white;
+        width: 100%;
+       
     }
     .nav-link {
         font-size: 16px;
         margin-left: 0;
+        background: white;
     }
     ul,
     li {
@@ -902,7 +916,11 @@ padding-left: 20px;
     }
 
     .nav-right {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        margin: 20px 0 0;
     }
     .hero {
         padding: 50px 0 0;
